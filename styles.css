@@ -121,6 +121,19 @@ ul.osa {
     list-style-position: inside;
 }
 
+ul#info {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 600px) {
+    ul#info {
+        padding-left: 0px;
+        padding-right: 0px;
+        list-style-position: inside;
+    }
+}
+
 .fixed-width-image {
     width: 76%;
     max-width: 100%;
