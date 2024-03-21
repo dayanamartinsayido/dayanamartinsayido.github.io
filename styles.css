@@ -1,8 +1,10 @@
 /* General Styles */
 body {
+    color: white;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: black;
     background-image: url('top_image_tablet.png'), url('footer_image_tablet.png');
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
@@ -17,13 +19,13 @@ header {
     background-size: cover;
     background-position: left; */
     /* background: red; */
-    color: #333;
+    color: white;
     padding: 1em 0;
 }
 
 .header-content h1 {
     font-size: 2em;
-    color: #555;
+    color: white;
     margin-bottom: 0.5em;
     font-weight: normal;
 }
@@ -237,68 +239,4 @@ ul#info {
     /* Adjust the size as needed */
     color: #333;
     text-transform: uppercase;
-}
-
-/* Info sections */
-
-.info-section {
-    display: flex;
-    align-items: flex-start;
-    /* Align items to the start of the flex container */
-    margin-bottom: 20px;
-    /* Space between sections */
-}
-
-.info-image {
-    flex: 0 0 150px;
-    /* Do not grow, do not shrink, start at 150px width */
-    margin-right: 20px;
-    /* Space between image and text */
-    width: 150px;
-    height: auto;
-}
-
-.info-content {
-    flex: 1;
-    /* Take up the remaining space */
-    text-align: left;
-}
-
-.info-content h2 {
-    margin: 0 0 10px 0;
-    /* Only margin-bottom */
-    font-size: 1.5em;
-    /* Adjust size as needed */
-}
-
-@media (max-width: 768px) {
-    .info-section {
-        flex-direction: column;
-        /* Stack image and content on smaller screens */
-    }
-
-    .info-image {
-        width: 100%;
-        /* Full width on smaller screens */
-        margin-right: 0;
-        /* No margin on the right of images on smaller screens */
-        margin-bottom: 10px;
-        /* Space between image and text */
-    }
-}
-
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-top: 10px;
-}
-
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
 }
