@@ -1,0 +1,70 @@
+/* Info sections */
+
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the start of the flex container */
+    margin-bottom: 20px;
+    /* Space between sections */
+}
+
+.info-image {
+    flex: 0 0 150px;
+    /* Do not grow, do not shrink, start at 150px width */
+    margin-right: 20px;
+    /* Space between image and text */
+    width: 150px;
+    height: auto;
+}
+
+.info-content {
+    flex: 1;
+    /* Take up the remaining space */
+    text-align: left;
+}
+
+.info-content h2 {
+    margin: 0 0 10px 0;
+    /* Only margin-bottom */
+    font-size: 1.5em;
+    /* Adjust size as needed */
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        /* Stack image and content on smaller screens */
+    }
+
+    .info-content {
+        flex: 0;
+    }
+
+    .info-image {
+        flex: 1;
+        width: 100%;
+        /* Full width on smaller screens */
+        margin-right: 0;
+        /* No margin on the right of images on smaller screens */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        /* Space between image and text */
+    }
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-top: 10px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
