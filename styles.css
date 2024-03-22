@@ -96,7 +96,7 @@ nav ul li a:focus {
 
     nav ul li a {
         text-align: center;
-        background-color: rgba(14, 40, 7, 0.7);
+        /* background-color: rgba(14, 40, 7, 0.7); */
         /* Centers the text */
         padding: 15px;
         /* Larger padding for easier tapping on mobile */
